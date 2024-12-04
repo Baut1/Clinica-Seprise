@@ -18,12 +18,12 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtTitulo"
+        android:id="@+id/lblTitulo"
         android:layout_width="250dp"
         android:layout_height="90dp"
         android:fontFamily="@font/raleway_bold"
         android:gravity="center"
-        android:text="Bienvenido a la Clinica Seprise"
+        android:text="@string/splash_lbl_title"
         android:textSize="32sp"
         app:layout_constraintBottom_toTopOf="@+id/imgSplashMain"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="Registrarse"
+        android:text="@string/splash_btn_registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgSplashMain" />
@@ -48,7 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Iniciar Sesion"
+        android:text="@string/splash_btn_inicio_sesion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnRegistro" />

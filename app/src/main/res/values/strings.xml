@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">Clinica Seprise</string>
+    <string name="splash_lbl_title">Bienvenido a la Clinica Seprise</string>
+    <string name="splash_btn_registro">Registrarse</string>
+    <string name="splash_btn_inicio_sesion">Iniciar Sesion</string>
+    <string name="sign_up_lbl_title">Crear una cuenta</string>
+    <string name="sign_up_btn_registro">Registrarse</string>
+    <string name="sign_up_txt_hint_password">Contraseña</string>
+    <string name="sign_up_txt_hint_email">Correo electrónico</string>
+    <string name="sign_up_btn_redirect_login">¿Ya tienes una cuenta? Inicia sesion</string>
+    <string name="login_btn_redirect_sign_up">¿No tienes una cuenta? Registrate</string>
+    <string name="login_btn_inicio_sesion">Iniciar Sesión</string>
+    <string name="login_btn_redirect_forgot_password">¿Olvidaste tu Contraseña?</string>
+    <string name="login_txt_hint_password">Contraseña</string>
+    <string name="login_txt_hint_email">Correo electrónico</string>
+    <string name="login_lbl_title">Ingresar</string>
+    <string name="home_lbl_user_name">Hola, name</string>
 </resources>
