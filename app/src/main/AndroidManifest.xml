@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ClinicaSeprise"
         tools:targetApi="31">
         <activity
+            android:name=".NuevoTurnoDatePicker"
+            android:exported="false" />
+        <activity
+            android:name=".NuevoTurnoEspecialidad"
+            android:exported="false" />
+        <activity
             android:name=".Notificaciones"
             android:exported="false" />
         <activity

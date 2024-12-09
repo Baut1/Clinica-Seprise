@@ -58,10 +58,23 @@ class AccountsDatabaseHelper (context: Context) :
         return isValid
     }
 
-    fun getUser(email: String): String? {
+    fun getUserIdByEmail(email: String): Int? {
         val db = this.readableDatabase
-        val query = "SELECT $COLUMN_NAME FROM $TABLE_ACCOUNTS WHERE $COLUMN_EMAIL = ?"
+        val query = "SELECT $COLUMN_ID FROM $TABLE_ACCOUNTS WHERE $COLUMN_EMAIL = ?"
         val cursor = db.rawQuery(query, arrayOf(email))
+        var userId: Int? = null
+        if (cursor.moveToFirst()) {
+            userId = cursor.getInt(cursor.getColumnIndexOrThrow(COLUMN_ID))
+        }
+        cursor.close()
+        db.close()
+        return userId
+    }
+
+    fun getName(userId: Int): String? {
+        val db = this.readableDatabase
+        val query = "SELECT $COLUMN_NAME FROM $TABLE_ACCOUNTS WHERE $COLUMN_ID = ?"
+        val cursor = db.rawQuery(query, arrayOf(userId.toString()))
         var name: String? = null
         if (cursor.moveToFirst()) {
             name = cursor.getString(cursor.getColumnIndexOrThrow(COLUMN_NAME))

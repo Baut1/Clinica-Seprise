@@ -18,4 +18,8 @@
     <string name="sign_up_txt_hint_name">Nombre</string>
     <string name="home_lbl_bienvenida">Hola, %1$s!</string>
     <string name="home_lbl_bienvenida_not_found">Usuario no encontrado.</string>
+    <string name="turnos_text_view_titulo">Mis Turnos</string>
+    <string name="nuevo_turno_date_picker_text_view_indicativa">Selecciona fecha y hora</string>
+    <string name="nuevo_turno_date_picker_button_confirmar_turno">Confirmar Turno</string>
+    <string name="nuevo_turno_especialidad_text_view_indicativa">Selecciona la especialidad de tu preferencia</string>
 </resources>

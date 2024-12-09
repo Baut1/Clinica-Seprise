@@ -4,12 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.widget.ScrollView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -27,17 +24,16 @@ class Home : BaseActivity() {
         }
 
         val dbHelper = AccountsDatabaseHelper(this)
-        val email = intent.getStringExtra("USER_EMAIL")
+        val sessionManager = SessionManager(this)
+        val userId = sessionManager.getUserId()
 
-        if (email != null) {
-            val userName = dbHelper.getUser(email)
-            val welcomeTextView = findViewById<TextView>(R.id.txtBienvenida)
+        val userName = dbHelper.getName(userId)
+        val welcomeTextView = findViewById<TextView>(R.id.txtBienvenida)
 
-            if (userName != null) {
-                welcomeTextView.text = getString(R.string.home_lbl_bienvenida, userName)
-            } else {
-                welcomeTextView.text = getString(R.string.home_lbl_bienvenida_not_found)
-            }
+        if (userName != null) {
+            welcomeTextView.text = getString(R.string.home_lbl_bienvenida, userName)
+        } else {
+            welcomeTextView.text = getString(R.string.home_lbl_bienvenida_not_found)
         }
 
         val cardContainer = findViewById<LinearLayout>(R.id.cardContainer)

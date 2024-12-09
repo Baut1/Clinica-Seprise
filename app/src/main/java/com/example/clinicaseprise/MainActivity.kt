@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         btnRegistro.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
+            finish()
         }
 
         val btnInicioSesion = findViewById<Button>(R.id.btnInicioSesion)
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         btnInicioSesion.setOnClickListener {
             val intent = Intent(this, Login::class.java)
             startActivity(intent)
+            finish()
         }
 
     }

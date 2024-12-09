@@ -39,6 +39,12 @@ class Login : AppCompatActivity() {
                 val isValid = dbHelper.validateUser(email, password)
 
                 if (isValid) {
+                    val userId = dbHelper.getUserIdByEmail(email)
+                    val sessionManager = SessionManager(this)
+                    if (userId != null) {
+                        sessionManager.saveUserId(userId)
+                    }
+
                     val intent = Intent(this, Home::class.java)
                     intent.putExtra("USER_EMAIL", email)
                     startActivity(intent)
@@ -47,11 +53,13 @@ class Login : AppCompatActivity() {
                     Toast.makeText(this, "Email y/o contraseña incorrectos", Toast.LENGTH_SHORT).show()
                 }
             }
+            finish()
         }
 
         btnRegistro.setOnClickListener {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }
