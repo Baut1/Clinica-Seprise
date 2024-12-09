@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E7F4FF"
-    tools:context=".Ayuda"/>
+    tools:context=".Ayuda">
 
 
     <!-- Botón de volver -->
@@ -17,9 +17,7 @@
     android:layout_marginStart="16dp"
     android:layout_marginTop="16dp"
     android:background="?attr/selectableItemBackground"
-    android:contentDescription="@string/volver"
-    android:src="@drawable/ic_arrow_back"
-    android:tint="@color/primary"
+    android:src="@drawable/back"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +30,6 @@
     android:layout_marginTop="16dp"
     android:fontFamily="@font/raleway_bold"
     android:text="Preguntas frecuentes"
-    android:textColor="@color/primary_dark"
     android:textSize="24sp"
     app:layout_constraintStart_toEndOf="@id/btnBack"
     app:layout_constraintTop_toTopOf="parent" />
@@ -76,7 +73,6 @@
                         android:layout_height="wrap_content"
                         android:text="¿Cómo solicito un turno para estudios clínicos?"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/primary_dark"
                         android:textStyle="bold" />
 
                     <TextView
@@ -86,8 +82,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Puedes solicitar un turno ingresando a la sección de 'Solicitar Turno'..."
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                        android:textColor="@color/secondary_text"
-                        android:visibility="gone" />
+                        />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -111,7 +106,6 @@
                         android:layout_height="wrap_content"
                         android:text="¿Puedo cancelar o reprogramar un turno?"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/primary_dark"
                         android:textStyle="bold" />
 
                     <TextView
@@ -121,8 +115,7 @@
                         android:layout_marginTop="8dp"
                         android:text="Sí, puedes gestionar tus turnos en la sección 'Mis Turnos'..."
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                        android:textColor="@color/secondary_text"
-                        android:visibility="gone" />
+                        />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -142,23 +135,21 @@
                     android:padding="16dp">
 
                     <TextView
-                        android:id="@+id/txtPregunta2"
+                        android:id="@+id/txtPregunta3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="¿Qué documentos necesito para el estudio?"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/primary_dark"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/txtRespuesta2"
+                        android:id="@+id/txtRespuesta3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Generalmente, se requiere la orden médica y en algunos casos..."
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                        android:textColor="@color/secondary_text"
-                        android:visibility="gone" />
+                        />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
@@ -178,23 +169,21 @@
                     android:padding="16dp">
 
                     <TextView
-                        android:id="@+id/txtPregunta2"
+                        android:id="@+id/txtPregunta4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="¿Cómo veo los resultados de mis estudios?"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="@color/primary_dark"
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/txtRespuesta2"
+                        android:id="@+id/txtRespuesta4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
                         android:text="Los resultados están disponibles en la sección 'Mis Estudios' una..."
                         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-                        android:textColor="@color/secondary_text"
-                        android:visibility="gone" />
+                        />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
