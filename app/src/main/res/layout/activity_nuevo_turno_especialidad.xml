@@ -14,7 +14,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/raleway_bold"
-        android:text="Selecciona la especialidad de tu preferencia"
+        android:text="@string/nuevo_turno_especialidad_text_view_indicativa"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

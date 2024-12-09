@@ -16,11 +16,6 @@
             android:name=".NuevoTurnoDatePicker"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
-            android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.ClinicaSeprise.NoActionBar" />
-        <activity
             android:name=".NuevoTurnoEspecialidad"
             android:exported="false" />
         <activity
