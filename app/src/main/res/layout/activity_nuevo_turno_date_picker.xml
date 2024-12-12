@@ -7,27 +7,48 @@
     android:layout_height="match_parent"
     tools:context=".NuevoTurnoDatePicker">
 
-    <TextView
-        android:id="@+id/lblNuevoTurnoDatePickerDescripcion"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/nuevoTurnoDatePickerLinearLayoutTopNav"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/raleway_bold"
-        android:text="@string/nuevo_turno_date_picker_text_view_indicativa"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/nuevoTurnoDatePickerIconButtonBack"
+            style="?attr/materialIconButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/icon_button_back_content_description"
+            app:icon="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblNuevoTurnoDatePickerDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:text="@string/nuevo_turno_date_picker_text_view_indicativa"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     <DatePicker
         android:id="@+id/datePickerNuevoTurno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
+        android:theme="@style/CustomDatePickerStyle"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/lblNuevoTurnoDatePickerDescripcion" />
+        app:layout_constraintTop_toBottomOf="@id/nuevoTurnoDatePickerLinearLayoutTopNav" />
 
     <TimePicker
         android:id="@+id/timePickerNuevoTurno"
@@ -42,7 +63,6 @@
         android:id="@+id/btnConfirmarTurno"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/nuevo_turno_date_picker_button_confirmar_turno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

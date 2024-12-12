@@ -23,4 +23,6 @@
     <string name="nuevo_turno_date_picker_button_confirmar_turno">Confirmar Turno</string>
     <string name="nuevo_turno_especialidad_text_view_indicativa">Selecciona la especialidad de tu preferencia</string>
     <string name="resultados_text_view_titulo">Resultados de laboratorio</string>
+    <string name="icon_button_back_content_description">return</string>
+    <string name="nuevo_turno_especialidad_text_view_titulo">Nuevo turno</string>
 </resources>
