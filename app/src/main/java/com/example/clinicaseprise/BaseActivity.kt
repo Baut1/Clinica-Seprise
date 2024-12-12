@@ -20,21 +20,18 @@ abstract class BaseActivity : AppCompatActivity() {
         bottomNavigationView?.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    Log.d("BaseActivity", "Home selected") // IDs must match
                     if (this !is Home) {
                         startActivity(Intent(this, Home::class.java))
                     }
                     true
                 }
-                R.id.nav_notificaciones -> {
-                    Log.d("BaseActivity", "notif selected")
-                    if (this !is Notificaciones) {
-                        startActivity(Intent(this, Notificaciones::class.java))
+                R.id.nav_nuevo_turno -> {
+                    if (this !is NuevoTurnoEspecialidad) {
+                        startActivity(Intent(this, NuevoTurnoEspecialidad::class.java))
                     }
                     true
                 }
                 R.id.nav_configuracion -> {
-                    Log.d("BaseActivity", "Settings selected")
                     if (this !is Configuracion) {
                         startActivity(Intent(this, Configuracion::class.java))
                     }
@@ -55,7 +52,7 @@ abstract class BaseActivity : AppCompatActivity() {
         bottomNavigationView?.menu?.let { menu ->
             when (this) {
                 is Home -> menu.findItem(R.id.nav_home)?.isChecked = true
-                is Notificaciones -> menu.findItem(R.id.nav_notificaciones)?.isChecked = true
+                is NuevoTurnoEspecialidad -> menu.findItem(R.id.nav_nuevo_turno)?.isChecked = true
                 is Configuracion -> menu.findItem(R.id.nav_configuracion)?.isChecked = true
             }
         }

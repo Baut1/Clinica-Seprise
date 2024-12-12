@@ -5,9 +5,9 @@
         android:icon="@drawable/ic_home"
         android:title="Home" />
     <item
-        android:id="@+id/nav_notificaciones"
-        android:icon="@drawable/ic_notifications"
-        android:title="Notificaciones" />
+        android:id="@+id/nav_nuevo_turno"
+        android:icon="@drawable/ic_add"
+        android:title="Nuevo Turno" />
     <item
         android:id="@+id/nav_configuracion"
         android:icon="@drawable/ic_settings"
