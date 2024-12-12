@@ -48,7 +48,8 @@ class SignUp : AppCompatActivity() {
                 } else {
                     Toast.makeText(this, "Error al guardar el usuario", Toast.LENGTH_SHORT).show()
                 }
-                finish()
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent)
             }
         }
 

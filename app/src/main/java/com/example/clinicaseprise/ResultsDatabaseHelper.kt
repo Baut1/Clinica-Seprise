@@ -98,7 +98,7 @@ class ResultsDatabaseHelper(context: Context) :
         val db = this.writableDatabase
         studies.forEach { (fecha, titulo, resultado) ->
             val values = ContentValues().apply {
-                put(COLUMN_USER_ID, 3)
+                put(COLUMN_USER_ID, 4)
                 put(COLUMN_FECHA, fecha)
                 put(COLUMN_TITULO, titulo)
                 put(COLUMN_RESULTADO, resultado)
