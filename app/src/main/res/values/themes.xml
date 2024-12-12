@@ -24,4 +24,10 @@
     <style name="Theme.ClinicaSeprise.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.ClinicaSeprise.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomDatePickerStyle" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorSecondary">@color/my_light_primary</item>
+        <item name="android:textColorPrimary">@color/my_light_on_background</item>
+    </style>
+
 </resources>

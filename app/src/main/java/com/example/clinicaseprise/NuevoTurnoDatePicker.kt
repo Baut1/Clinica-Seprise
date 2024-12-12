@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class NuevoTurnoDatePicker : BaseActivity() {
     override fun getLayoutResourceId(): Int = R.layout.activity_nuevo_turno_date_picker
@@ -52,6 +53,13 @@ class NuevoTurnoDatePicker : BaseActivity() {
             } else {
                 Toast.makeText(this, "Error al confirmar el turno", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        val btnRegresar = findViewById<Button>(R.id.nuevoTurnoDatePickerIconButtonBack)
+        btnRegresar.setOnClickListener {
+            val intent = Intent(this, NuevoTurnoEspecialidad::class.java)
+            startActivity(intent)
+            finish()
         }
     }
 }
