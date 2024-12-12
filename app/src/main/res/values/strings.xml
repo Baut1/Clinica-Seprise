@@ -15,4 +15,14 @@
     <string name="login_txt_hint_email">Correo electrónico</string>
     <string name="login_lbl_title">Ingresar</string>
     <string name="home_lbl_user_name">Hola, name</string>
+    <string name="sign_up_txt_hint_name">Nombre</string>
+    <string name="home_lbl_bienvenida">Hola, %1$s!</string>
+    <string name="home_lbl_bienvenida_not_found">Usuario no encontrado.</string>
+    <string name="turnos_text_view_titulo">Mis Turnos</string>
+    <string name="nuevo_turno_date_picker_text_view_indicativa">Selecciona fecha y hora</string>
+    <string name="nuevo_turno_date_picker_button_confirmar_turno">Confirmar Turno</string>
+    <string name="nuevo_turno_especialidad_text_view_indicativa">Selecciona la especialidad de tu preferencia</string>
+    <string name="resultados_text_view_titulo">Resultados de laboratorio</string>
+    <string name="icon_button_back_content_description">return</string>
+    <string name="nuevo_turno_especialidad_text_view_titulo">Nuevo turno</string>
 </resources>

@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.ClinicaSeprise" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-         <item name="colorPrimary">@color/my_light_primary</item>
-         <item name="android:textColor">@color/my_light_primary</item>
-         <item name="colorSurface">@color/my_light_background</item>
+        <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="android:textColor">@color/my_light_primary</item>
+        <item name="colorSurface">@color/my_light_background</item>
 
     </style>
 
@@ -15,4 +15,19 @@
         <item name="borderWidth">2dp</item> <!-- Ancho del borde -->
         <item name="android:textColor">@color/my_light_primary</item> <!-- Color del texto -->
     </style>
+
+    <style name="Theme.ClinicaSeprise.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ClinicaSeprise.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ClinicaSeprise.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="CustomDatePickerStyle" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorSecondary">@color/my_light_primary</item>
+        <item name="android:textColorPrimary">@color/my_light_on_background</item>
+    </style>
+
 </resources>

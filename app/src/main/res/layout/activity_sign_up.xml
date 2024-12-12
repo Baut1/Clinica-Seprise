@@ -11,12 +11,13 @@
         android:id="@+id/lblTitulo"
         android:layout_width="250dp"
         android:layout_height="90dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="80dp"
         android:fontFamily="@font/raleway_bold"
         android:gravity="center"
         android:text="@string/sign_up_lbl_title"
         android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -34,11 +35,25 @@
         android:id="@+id/btnRegistro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="44dp"
         android:text="@string/sign_up_btn_registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints="name"
+        android:ems="10"
+        android:hint="@string/sign_up_txt_hint_name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSignUpMain" />
 
     <EditText
         android:id="@+id/txtPassword"
@@ -58,7 +73,7 @@
         android:id="@+id/txtEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:autofillHints="emailAddress"
         android:ems="10"
         android:hint="@string/sign_up_txt_hint_email"
@@ -66,7 +81,7 @@
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imgSignUpMain" />
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
 
     <Button
         style="@style/Widget.Material3.Button.TextButton"
